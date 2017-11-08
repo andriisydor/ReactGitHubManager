@@ -9,15 +9,15 @@ var BUILD_DIR = path.resolve(__dirname, 'src/client/public');
 var APP_DIR = path.resolve(__dirname, 'Scripts');
 
 var paths = {
-    webroot: "./wwwroot/"
+    webroot: "./"
 };
 
-paths.js = paths.webroot + "js/**/*.js";
-paths.minJs = paths.webroot + "js/**/*.min.js";
+paths.js = paths.webroot + "**/*.js";
+paths.minJs = paths.webroot + "**/*.min.js";
 paths.css = paths.webroot + "css/**/*.css";
 paths.minCss = paths.webroot + "css/**/*.min.css";
-paths.app = paths.webroot + "js/app/app.jsx";
-paths.concatJsDest = paths.webroot + "js/site.min.js";
+paths.app = paths.webroot + "app/app.jsx";
+paths.concatJsDest = paths.webroot + "site.min.js";
 paths.concatCssDest = paths.webroot + "css/site.min.css";
 paths.concatJsxDest = paths.webroot + "dist/bundle.js";
 
