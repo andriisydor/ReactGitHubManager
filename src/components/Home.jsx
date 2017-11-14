@@ -6,7 +6,7 @@ import GitHubRepoListContainer from '../containers/GitHubRepoListContainer'
 
 
 
-class Home extends React.Component  { 
+export default class Home extends React.Component  {
     render() {
 
         return (
@@ -14,5 +14,4 @@ class Home extends React.Component  {
                     
 )}};
 
-
-module.exports = connect()(Home);
+connect()(Home);

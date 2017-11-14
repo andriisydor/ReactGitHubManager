@@ -26,9 +26,9 @@ export default class GitHubRepoList extends React.Component {
                   isFetching?(<div>LOADING...</div>):
         repositories.map(repository=>{
             return (
-                             <div> <RepoItem key={repository.id} name={repository.name} url={repository.url} description={repository.description} />
-                         <hr/></div>
-                             )
+                    <div> <RepoItem key={repository.id} repository={repository} />
+                    </div>
+                   )
 
 
         })
